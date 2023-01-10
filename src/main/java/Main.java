@@ -1,7 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String s = "0P_";
-        System.out.println(Solution.isPalindrome(s));
+        String s = "A man, a plan, a canal: Panama".toLowerCase().replaceAll("[^a-z0-9]","").trim();;
+
+        if (Solution.isPalindrome(s)){
+            System.out.println(s + " is a palindrome");
+        }else {
+            System.out.println(s + " is not a palindrome.");
+        }
     }
 
     public static class Solution {
